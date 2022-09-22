@@ -51,7 +51,7 @@ class _User_img_pickerState extends State<User_img_picker> {
               icon: Icon(Icons.photo_camera_outlined,color: Theme.of(context).primaryColor),
               label: Text('Add image\nFrom Camera',style: TextStyle(color: Theme.of(context).primaryColor,),),
             ),
-            const SizedBox(width: 6,),
+            const SizedBox(width: 2,),
             ElevatedButton.icon(
               style: ButtonStyle(backgroundColor:MaterialStatePropertyAll( Colors.white)),
               onPressed: () => _pick_img(ImageSource.gallery),

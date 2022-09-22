@@ -1,3 +1,4 @@
+import 'package:chat_application/screens/all_chats_screen.dart';
 import 'package:chat_application/screens/auth_screen.dart';
 import 'package:chat_application/screens/chat_screen.dart';
 import 'package:chat_application/screens/splash_screen.dart';
@@ -5,6 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,6 +38,8 @@ class MyApp extends StatelessWidget {
               accentColor: Colors.deepPurple,
               brightness: Brightness.light)),
       home: StreamBuilder(stream: FirebaseAuth.instance.authStateChanges() ,builder:(ctx,snapshot){
+
+       // return All_Chats_Screen();
 
         if(snapshot.connectionState==ConnectionState.waiting)
           return Splash_screen();
