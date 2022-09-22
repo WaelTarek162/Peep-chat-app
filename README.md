@@ -1,6 +1,6 @@
 # Peep chat
 
-chat application using flutter and firebase
+chat application using flutter , RESTful API , simple UI and many Animations.
 
 
 ## application start with login screen if it's first time to use our app
